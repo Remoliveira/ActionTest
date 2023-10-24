@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: /Remoliveira/id-analyzer-action2
+        uses: Remoliveira/id-analyzer-action2
         with:
           repo: ActionTest
           owner: Remoliveira
