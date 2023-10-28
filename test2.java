@@ -57,8 +57,12 @@ public class Address implements Serializable {
     }
 
     public void setPinCode(long pinCode) {
+    }
+
         this.pinCode = pinCode;
     }
+       public void setPinCode(long pinCode) {
+        this.pinCode = pinCode;
 
 
 }
