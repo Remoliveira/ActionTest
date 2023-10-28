@@ -3,11 +3,11 @@ on: [push]
 jobs:
   analyzerJob:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to say thank you
     steps:
-      - name: Hello world action step
+      - name: Analyzer
         id: hello
-        uses: Remoliveira/id-analyzer-action3@v34
+        uses: Remoliveira/id-analyzer-action3@v6
         with:
           repo: ActionTest
           owner: Remoliveira
