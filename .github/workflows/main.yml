@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Analyzer
         id: hello
-        uses: Remoliveira/id-analyzer-action3@v616
+        uses: Remoliveira/id-analyzer-action3@v555
         with:
           repo: ActionTest
           owner: Remoliveira
