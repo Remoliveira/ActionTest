@@ -1,15 +1,16 @@
 on: [push]
 
 jobs:
-  # firstWorkflow:
+  firstWorkflow:
+    uses: Remoliveira/id-analyzer-action3/.github/workflows/main.yaml@n1
 
   analyzerJob:
     runs-on: ubuntu-latest
     name: A job to say thank you
-    # needs: firstWorkflow
+    needs: firstWorkflow
     steps:
-      - name: FirstWorkflow
-        uses: Remoliveira/id-analyzer-action3/.github/workflows/main.yaml@n1
+      - name: checkDist
+        run: ls
 
       - name: Analyzer
         id: hello
