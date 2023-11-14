@@ -6,9 +6,9 @@ jobs:
   analyzerJob:
     runs-on: ubuntu-latest
     name: A job to say thank you
-    uses: Remoliveira/id-analyzer-action3/.github/workflows/main.yaml@n1
     # needs: firstWorkflow
     steps:
+      uses: Remoliveira/id-analyzer-action3/.github/workflows/main.yaml@n1
       - name: Analyzer
         id: hello
         uses: Remoliveira/id-analyzer-action3@n1
