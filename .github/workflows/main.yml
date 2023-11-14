@@ -2,7 +2,7 @@ on: [push]
 
 jobs:
   firstWorkflow:
-    uses: Remoliveira/id-analyzer-action3/.github/workflows/main.yaml@new
+    uses: Remoliveira/id-analyzer-action3/.github/workflows/main.yaml@n1
 
   analyzerJob:
     runs-on: ubuntu-latest
@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Analyzer
         id: hello
-        uses: Remoliveira/id-analyzer-action3@new
+        uses: Remoliveira/id-analyzer-action3@n1
         with:
           repo: ActionTest
           owner: Remoliveira
