@@ -1,20 +1,15 @@
 on: [push]
 
 jobs:
-  firstWorkflow:
-    uses: Remoliveira/id-analyzer-action3/.github/workflows/main.yaml@n1
-
   analyzerJob:
     runs-on: ubuntu-latest
     name: A job to say thank you
     needs: firstWorkflow
     steps:
-      - name: checkDist
-        run: ls
-
+      - uses: actions/checkout@v4
       - name: Analyzer
         id: hello
-        uses: Remoliveira/id-analyzer-action3@n1
+        uses: Remoliveira/id-analyzer-action4@v1
         with:
           repo: ActionTest
           owner: Remoliveira
