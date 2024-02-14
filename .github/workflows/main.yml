@@ -6,14 +6,8 @@ jobs:
     name: A job to say thank you
     needs: firstWorkflow
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Analyzer
         id: hello
-        uses: Remoliveira/id-analyzer-action4@v1
-        with:
-          repo: ActionTest
-          owner: Remoliveira
-          branch: master
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.out }}"
+        uses: Remoliveira/id-analyzer-action4@v2
