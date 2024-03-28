@@ -122,19 +122,6 @@ public class CartServlet extends HttpServlet {
                 + "    </tr>\r\n";
     }
 
-     public String getRowData(Cart cart) {
-        Book book = cart.getBook();
-        return "    <tr>\r\n"
-                + "      <th scope=\"row\">" + book.getBarcode() + "</th>\r\n"
-                + "      <td>" + book.getName() + "</td>\r\n"
-                + "      <td>" + book.getAuthor() + "</td>\r\n"
-                + "      <td><span>&#8377;</span> " + book.getPrice() + "</td>\r\n"
-                + "      <td><form method='post' action='cart'><button type='submit' name='removeFromCart' class=\"glyphicon glyphicon-minus btn btn-danger\"></button> "
-                + "<input type='hidden' name='selectedBookId' value='" + book.getBarcode() + "'/>"
-                + cart.getQuantity()
-                + " <button type='submit' name='addToCart' class=\"glyphicon glyphicon-plus btn btn-success\"></button></form></td>\r\n"
-                + "      <td><span>&#8377;</span> " + (book.getPrice() * cart.getQuantity()) + "</td>\r\n"
-                + "    </tr>\r\n";
-    }
+    
 
 }
